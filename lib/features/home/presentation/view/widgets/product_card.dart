@@ -72,8 +72,9 @@ class ProductCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                Align(
-                  alignment: AlignmentGeometry.topRight,
+                Positioned(
+                  top: 8.h,
+                  left: 130.w,
                   child: Container(
                     width: 37.w,
                     height: 37.h,

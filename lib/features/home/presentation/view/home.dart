@@ -34,6 +34,9 @@ class Home extends StatelessWidget {
             ),
             body: pages[state],
             bottomNavigationBar: BottomNavigationBar(
+              selectedItemColor: AppColors.primary,
+              unselectedItemColor: AppColors.black,
+              showUnselectedLabels: true,
               onTap: (value) {
                 context.read<PagesCubit>().pageNavigator(value);
               },

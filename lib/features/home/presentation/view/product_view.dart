@@ -67,7 +67,7 @@ class ProductView extends StatelessWidget {
                     Stack(
                       children: [
                         ClipRRect(
-                          borderRadius: BorderRadius.circular(8.r),
+                          borderRadius: BorderRadius.circular(15.r),
                           child: Image.network(
                             image,
                             width: 306.w,
@@ -80,8 +80,9 @@ class ProductView extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Align(
-                          alignment: AlignmentGeometry.topRight,
+                        Positioned(
+                          top: 8.h,
+                          left: 260.w,
                           child: Container(
                             width: 37.w,
                             height: 37.h,
