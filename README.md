@@ -1,17 +1,24 @@
-# e_commerce_nti
+# E-Commerce App
 
-A new Flutter project.
+A Flutter shopping app that connects to a REST API. Users register and log in, browse products by category, and manage orders and their profile.
 
-## Getting Started
+## Features
+- Register, login and a forgot-password screen
+- Product and category listing, product details, search
+- Favorites
+- Cart and checkout that places an order through the API
+- Orders list with separate active, completed and cancelled pages, order details, and cancel/complete actions
+- View and update profile (name and phone)
+- Access token kept in secure storage and sent as a Bearer token
 
-This project is a starting point for a Flutter application.
+## Tech stack
+Flutter, Dart, flutter_bloc (Cubit), Dio, Dartz (`Either` for error handling), get_it, flutter_secure_storage, flutter_screenutil, flutter_svg, flutter_rating_bar, intl
 
-A few resources to get you started if this is your first Flutter project:
+## Project structure
+Code is grouped by feature under `lib/features` (auth, home, items, card, order, my favorites, profile, search, start), with shared helpers, widgets and styles in `lib/core`.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Run it
+```
+flutter pub get
+flutter run
+```
