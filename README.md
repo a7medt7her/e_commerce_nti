@@ -1,4 +1,4 @@
-# E-Commerce App
+<img src="assets/banner.svg" alt="e_commerce_nti" width="100%">
 
 A Flutter shopping app that connects to a REST API. Users register and log in, browse products by category, and manage orders and their profile.
 
